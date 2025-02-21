@@ -1784,6 +1784,7 @@ ini_parsing:
 
 				if (!icon_pl_custom)
 					img_colorize = true;
+					img_noborder = true;
 			}
 		}
 		else
@@ -1818,6 +1819,7 @@ ini_parsing:
 
 			if (!icon_sw_custom)
 				img_colorize = true;
+				img_noborder = true;
 		}
 
 		//Set icon.
