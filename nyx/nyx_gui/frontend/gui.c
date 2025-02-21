@@ -1783,8 +1783,10 @@ ini_parsing:
 				bmp = icon_payload;
 
 				if (!icon_pl_custom)
+				{
 					img_colorize = true;
 					img_noborder = true;
+				}
 			}
 		}
 		else
@@ -1818,8 +1820,10 @@ ini_parsing:
 			bmp = icon_switch;
 
 			if (!icon_sw_custom)
+			{
 				img_colorize = true;
 				img_noborder = true;
+			}
 		}
 
 		//Set icon.
