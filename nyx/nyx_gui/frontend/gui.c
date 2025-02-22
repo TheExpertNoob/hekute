@@ -849,7 +849,7 @@ void nyx_window_toggle_buttons(lv_obj_t *win, bool disable)
 	{
 		while (hbtn != NULL)
 		{
-			lv_obj_set_opa_scale(hbtn, LV_OPA_40);
+			lv_obj_set_opa_scale(hbtn, LV_OPA_0);
 			lv_obj_set_opa_scale_enable(hbtn, true);
 			lv_obj_set_click(hbtn, false);
 			hbtn = lv_obj_get_child_back(ext->header, hbtn);
@@ -1604,7 +1604,7 @@ static lv_res_t _create_window_home_launch(lv_obj_t *btn)
 	lv_style_copy(&btn_home_transp_pr, lv_theme_get_current()->btn.pr);
 	btn_home_transp_pr.body.main_color = LV_COLOR_HEX(0xFFFFFF);
 	btn_home_transp_pr.body.grad_color = btn_home_transp_pr.body.main_color;
-	btn_home_transp_pr.body.opa = LV_OPA_30;
+	btn_home_transp_pr.body.opa = LV_OPA_0;
 
 	static lv_style_t btn_label_home_transp;
 	lv_style_copy(&btn_label_home_transp, lv_theme_get_current()->cont);
@@ -2205,7 +2205,7 @@ static void _nyx_set_default_styles(lv_theme_t * th)
 	lv_style_copy(&mbox_darken, &lv_style_plain);
 	mbox_darken.body.main_color = LV_COLOR_BLACK;
 	mbox_darken.body.grad_color = mbox_darken.body.main_color;
-	mbox_darken.body.opa = LV_OPA_30;
+	mbox_darken.body.opa = LV_OPA_0;
 
 	lv_style_copy(&hint_small_style, th->label.hint);
 	hint_small_style.text.letter_space = 1;
@@ -2229,22 +2229,22 @@ static void _nyx_set_default_styles(lv_theme_t * th)
 	lv_style_copy(&btn_transp_rel, th->btn.rel);
 	btn_transp_rel.body.main_color = LV_COLOR_HEX(0x444444);
 	btn_transp_rel.body.grad_color = btn_transp_rel.body.main_color;
-	btn_transp_rel.body.opa = LV_OPA_50;
+	btn_transp_rel.body.opa = LV_OPA_0;
 
 	lv_style_copy(&btn_transp_pr, th->btn.pr);
 	btn_transp_pr.body.main_color = LV_COLOR_HEX(0x888888);
 	btn_transp_pr.body.grad_color = btn_transp_pr.body.main_color;
-	btn_transp_pr.body.opa = LV_OPA_50;
+	btn_transp_pr.body.opa = LV_OPA_0;
 
 	lv_style_copy(&btn_transp_tgl_rel, th->btn.tgl_rel);
 	btn_transp_tgl_rel.body.main_color = LV_COLOR_HEX(0x444444);
 	btn_transp_tgl_rel.body.grad_color = btn_transp_tgl_rel.body.main_color;
-	btn_transp_tgl_rel.body.opa = LV_OPA_50;
+	btn_transp_tgl_rel.body.opa = LV_OPA_0;
 
 	lv_style_copy(&btn_transp_tgl_pr, th->btn.tgl_pr);
 	btn_transp_tgl_pr.body.main_color = LV_COLOR_HEX(0x888888);
 	btn_transp_tgl_pr.body.grad_color = btn_transp_tgl_pr.body.main_color;
-	btn_transp_tgl_pr.body.opa = LV_OPA_50;
+	btn_transp_tgl_pr.body.opa = LV_OPA_0;
 
 	lv_style_copy(&ddlist_transp_bg, th->ddlist.bg);
 	ddlist_transp_bg.body.main_color = LV_COLOR_HEX(0x2D2D2D);
